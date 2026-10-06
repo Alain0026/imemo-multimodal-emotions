@@ -1,0 +1,19 @@
+{
+  "Anger": 0,
+  "Anxiety": 1,
+  "Contempt": 2,
+  "Desire": 3,
+  "Disgust": 4,
+  "Distress": 5,
+  "Fear": 6,
+  "Happy": 7,
+  "Interest": 8,
+  "Joy": 9,
+  "Love": 10,
+  "Neutral": 11,
+  "Rage": 12,
+  "Sadness": 13,
+  "Shame": 14,
+  "Surprise": 15,
+  "Wonder": 16
+}

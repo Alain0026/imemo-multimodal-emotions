@@ -1,0 +1,5 @@
+[{"Frame From":"frame_det_00_000001","Frame to":"frame_det_00_000097","Person":"Person2_Woman","Part of video":"85_p2_1","Emotion":"Anxiety","Valence":0.01,"Arousal":0.59,"Basic_Emotion":"Fear","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000098","Frame to":"frame_det_00_000197","Person":"Person1_Man","Part of video":"85_p1_1","Emotion":"Love","Valence":0.82,"Arousal":0.65,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000198","Frame to":"frame_det_00_000383","Person":"Person2_Woman","Part of video":"85_p2_2","Emotion":"Sadness","Valence":-0.63,"Arousal":-0.27,"Basic_Emotion":"Sadness","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000384","Frame to":"frame_det_00_000471","Person":"Person1_Man","Part of video":"85_p1_2","Emotion":"Love","Valence":0.82,"Arousal":0.65,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000472","Frame to":"frame_det_00_000530","Person":"Person2_Woman","Part of video":"85_p2_3","Emotion":"Sadness","Valence":-0.63,"Arousal":-0.27,"Basic_Emotion":"Sadness","Sentiment":"Negative"}]

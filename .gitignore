@@ -11,7 +11,7 @@ get-pip.py
 DAN/
 
 # --- Dati, modelli e log ---
-data/
+data/processed/
 checkpoints/
 models/
 experiments/

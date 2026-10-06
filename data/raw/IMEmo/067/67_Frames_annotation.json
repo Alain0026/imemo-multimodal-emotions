@@ -1,0 +1,10 @@
+[{"Frame From":"frame_det_00_000001","Frame to":"frame_det_00_000164","Person":"Person1_Man","Part of video":"67_p1_1","Emotion":"Fear","Valence":-0.64,"Arousal":0.6,"Basic_Emotion":"Fear","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000165","Frame to":"frame_det_00_000534","Person":"Person2_Woman","Part of video":"67_p2_1","Emotion":"Love","Valence":0.82,"Arousal":0.65,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000535","Frame to":"frame_det_00_000567","Person":"Person1_Man","Part of video":"67_p1_2","Emotion":"Sadness","Valence":-0.63,"Arousal":-0.27,"Basic_Emotion":"Sadness","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000568","Frame to":"frame_det_00_000780","Person":"Person2_Woman","Part of video":"67_p2_2","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000781","Frame to":"frame_det_00_000850","Person":"Person1_Man","Part of video":"67_p1_3","Emotion":"Fear","Valence":-0.64,"Arousal":0.6,"Basic_Emotion":"Fear","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000851","Frame to":"frame_det_00_000966","Person":"Person2_Woman","Part of video":"67_p2_3","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000967","Frame to":"frame_det_00_001075","Person":"Person1_Man","Part of video":"67_p1_4","Emotion":"Anxiety","Valence":0.01,"Arousal":0.59,"Basic_Emotion":"Fear","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_001076","Frame to":"frame_det_00_001473","Person":"Person2_Woman","Part of video":"67_p2_4","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_001474","Frame to":"frame_det_00_001551","Person":"Person1_Man","Part of video":"67_p1_5","Emotion":"Happy","Valence":0.81,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_001552","Frame to":"frame_det_00_001989","Person":"Person2_Woman","Part of video":"67_p2_5","Emotion":"Love","Valence":0.82,"Arousal":0.65,"Basic_Emotion":"Happy","Sentiment":"Positive"}]

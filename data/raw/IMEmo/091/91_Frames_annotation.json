@@ -1,0 +1,2 @@
+[{"Frame From":"frame_det_00_000001","Frame to":"frame_det_00_000591","Person":"Person1_Man","Part of video":"91_p1_1","Emotion":"Wonder","Valence":0.27,"Arousal":0.24,"Basic_Emotion":"Surprise","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000592","Frame to":"frame_det_00_001397","Person":"Person2_Man","Part of video":"91_p2_1","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"}]

@@ -1,0 +1,4 @@
+[{"Frame From":"frame_det_00_000001","Frame to":"frame_det_00_001359","Person":"Person1_Woman","Part of video":"26_p1_1","Emotion":"Sadness","Valence":-0.63,"Arousal":-0.27,"Basic_Emotion":"Sadness","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_001360","Frame to":"frame_det_00_001432","Person":"Person2_Man","Part of video":"26_p2_1","Emotion":"Neutral","Valence":0,"Arousal":0,"Basic_Emotion":"Neutral","Sentiment":"Neutral"},
+{"Frame From":"frame_det_00_001433","Frame to":"frame_det_00_001602","Person":"Person1_Woman","Part of video":"26_p1_2","Emotion":"Sadness","Valence":-0.63,"Arousal":-0.27,"Basic_Emotion":"Sadness","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_001603","Frame to":"frame_det_00_001835","Person":"Person2_Man","Part of video":"26_p2_2","Emotion":"Neutral","Valence":0,"Arousal":0,"Basic_Emotion":"Neutral","Sentiment":"Neutral"}]

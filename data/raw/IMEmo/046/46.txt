@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=_Q27uim6ZN4
+start : 2.17
+end : 2.54

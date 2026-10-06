@@ -1,0 +1,10 @@
+[{"Frame From":"frame_det_00_000001","Frame to":"frame_det_00_000068","Person":"Person1_Man","Part of video":"34_p1_1","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000069","Frame to":"frame_det_00_000162","Person":"Person2_Woman","Part of video":"34_p2_1","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000163","Frame to":"frame_det_00_000374","Person":"Person1_Man","Part of video":"34_p1_2","Emotion":"Desire","Valence":0.58,"Arousal":0.62,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000375","Frame to":"frame_det_00_000512","Person":"Person2_Woman","Part of video":"34_p2_2","Emotion":"Surprise","Valence":0.4,"Arousal":0.67,"Basic_Emotion":"Surprise","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000513","Frame to":"frame_det_00_000599","Person":"Person1_Man","Part of video":"34_p1_3","Emotion":"Desire","Valence":0.58,"Arousal":0.62,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000600","Frame to":"frame_det_00_000693","Person":"Person2_Woman","Part of video":"34_p2_3","Emotion":"Neutral","Valence":0,"Arousal":0,"Basic_Emotion":"Neutral","Sentiment":"Neutral"},
+{"Frame From":"frame_det_00_000694","Frame to":"frame_det_00_000890","Person":"Person1_Man","Part of video":"34_p1_4","Emotion":"Love","Valence":0.82,"Arousal":0.65,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000891","Frame to":"frame_det_00_001060","Person":"Person2_Woman","Part of video":"34_p2_4","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_001061","Frame to":"frame_det_00_001181","Person":"Person1_Man","Part of video":"34_p1_5","Emotion":"Desire","Valence":0.58,"Arousal":0.62,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_001182","Frame to":"frame_det_00_001201","Person":"Person2_Woman","Part of video":"34_p2_5","Emotion":"Neutral","Valence":0,"Arousal":0,"Basic_Emotion":"Neutral","Sentiment":"Neutral"}]

@@ -1,0 +1,14 @@
+[
+  {
+    "Person": "Person1_Man",
+    "Age": 25,
+    "Gender": "Male",
+    "Social_relation": "Boyfriend/Girlfriend"
+  },
+  {
+    "Person": "Person2_Woman",
+    "Age": 25,
+    "Gender": "Female",
+    "Social_relation": "Boyfriend/Girlfriend"
+  }
+]

@@ -1,0 +1,5 @@
+[{"Frame From":"frame_det_00_000001","Frame to":"frame_det_00_000034","Person":"Person1_Woman","Part of video":"57_p1_1","Emotion":"Happy","Valence":0.81,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000035","Frame to":"frame_det_00_000150","Person":"Person2_Woman","Part of video":"57_p2_1","Emotion":"Anger","Valence":-0.43,"Arousal":0.67,"Basic_Emotion":"Anger","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000151","Frame to":"frame_det_00_000195","Person":"Person1_Woman","Part of video":"57_p1_2","Emotion":"Sadnesss","Valence":-0.63,"Arousal":-0.27,"Basic_Emotion":"Sadness","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000196","Frame to":"frame_det_00_000400","Person":"Person2_Woman","Part of video":"57_p2_2","Emotion":"Anger","Valence":-0.43,"Arousal":0.67,"Basic_Emotion":"Anger","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000401","Frame to":"frame_det_00_000494","Person":"Person1_Woman","Part of video":"57_p1_3","Emotion":"Sadnesss","Valence":-0.63,"Arousal":-0.27,"Basic_Emotion":"Sadness","Sentiment":"Negative"}]

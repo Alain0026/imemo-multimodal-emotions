@@ -1,0 +1,8 @@
+[{"Frame From":"frame_det_00_000001","Frame to":"frame_det_00_000169","Person":"Person2_Woman","Part of video":"12_p2_1","Emotion":"Anger","Valence":-0.43,"Arousal":0.67,"Basic_Emotion":"Anger","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000170","Frame to":"frame_det_00_000437","Person":"Person1_Man","Part of video":"12_p1_1","Emotion":"Shame","Valence":-0.57,"Arousal":0.01,"Basic_Emotion":"Sadness","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000438","Frame to":"frame_det_00_000531","Person":"Person2_Woman","Part of video":"12_p2_2","Emotion":"Anger","Valence":-0.43,"Arousal":0.67,"Basic_Emotion":"Anger","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000532","Frame to":"frame_det_00_000589","Person":"Person1_Man","Part of video":"12_p1_2","Emotion":"Anger","Valence":-0.43,"Arousal":0.67,"Basic_Emotion":"Anger","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000590","Frame to":"frame_det_00_000665","Person":"Person2_Woman","Part of video":"12_p2_3","Emotion":"Rage","Valence":-0.44,"Arousal":0.72,"Basic_Emotion":"Anger","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000666","Frame to":"frame_det_00_000715","Person":"Person1_Man","Part of video":"12_p1_3","Emotion":"Rage","Valence":-0.44,"Arousal":0.72,"Basic_Emotion":"Anger","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000716","Frame to":"frame_det_00_000738","Person":"Person2_Woman","Part of video":"12_p2_4","Emotion":"Contempt","Valence":-0.23,"Arousal":0.31,"Basic_Emotion":"Disgust","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000739","Frame to":"frame_det_00_000871","Person":"Person1_Man","Part of video":"12_p1_4","Emotion":"Anger","Valence":-0.43,"Arousal":0.67,"Basic_Emotion":"Anger","Sentiment":"Negative"}]

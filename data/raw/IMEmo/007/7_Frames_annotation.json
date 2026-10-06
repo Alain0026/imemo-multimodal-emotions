@@ -1,0 +1,5 @@
+[{"Frame From":"frame_det_00_000001","Frame to":"frame_det_00_000329","Person":"Person2_Woman","Part of video":"7_p1_1","Emotion":"Anger","Valence":-0.43,"Arousal":0.67,"Basic_Emotion":"Anger","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000330","Frame to":"frame_det_00_000861","Person":"Person1_Man","Part of video":"7_p2_1","Emotion":"Distress","Valence":-0.61,"Arousal":0.28,"Basic_Emotion":"Fear","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_000862","Frame to":"frame_det_00_001223","Person":"Person2_Woman","Part of video":"7_p1_2","Emotion":"Rage","Valence":-0.44,"Arousal":0.72,"Basic_Emotion":"Anger","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_001224","Frame to":"frame_det_00_001366","Person":"Person1_Man","Part of video":"7_p2_2","Emotion":"Anger","Valence":-0.43,"Arousal":0.67,"Basic_Emotion":"Anger","Sentiment":"Negative"},
+{"Frame From":"frame_det_00_001367","Frame to":"frame_det_00_001529","Person":"Person2_Woman","Part of video":"7_p2_3","Emotion":"Rage","Valence":-0.44,"Arousal":0.72,"Basic_Emotion":"Anger","Sentiment":"Negative"}]

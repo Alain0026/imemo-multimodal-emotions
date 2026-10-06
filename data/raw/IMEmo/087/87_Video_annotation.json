@@ -1,0 +1,14 @@
+[
+  {
+    "Person": "Person1_Man",
+    "Age": 54,
+    "Gender": "Male",
+    "Social_relation": "Serial killer/FBI trainee"
+  },
+  {
+    "Person": "Person2_Woman",
+    "Age": 29,
+    "Gender": "Female",
+    "Social_relation": "Serial killer/FBI trainee"
+  }
+]

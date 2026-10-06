@@ -1,0 +1,9 @@
+[{"Frame From":"frame_det_00_000001","Frame to":"frame_det_00_000038","Person":"Person1_Man","Part of video":"84_p1_1","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000039","Frame to":"frame_det_00_000078","Person":"Person2_Man","Part of video":"84_p2_1","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000079","Frame to":"frame_det_00_000366","Person":"Person1_Man","Part of video":"84_p1_2","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000367","Frame to":"frame_det_00_000430","Person":"Person2_Man","Part of video":"84_p2_2","Emotion":"Wonder","Valence":0.27,"Arousal":0.24,"Basic_Emotion":"Surprise","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000431","Frame to":"frame_det_00_000665","Person":"Person1_Man","Part of video":"84_p1_3","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000666","Frame to":"frame_det_00_000718","Person":"Person2_Man","Part of video":"84_p2_3","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000719","Frame to":"frame_det_00_000883","Person":"Person1_Man","Part of video":"84_p1_4","Emotion":"Interest","Valence":0.64,"Arousal":0.51,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000884","Frame to":"frame_det_00_000938","Person":"Person2_Man","Part of video":"84_p2_4","Emotion":"Neutral","Valence":0,"Arousal":0,"Basic_Emotion":"Neutral","Sentiment":"Neutral"},
+{"Frame From":"frame_det_00_000939","Frame to":"frame_det_00_001023","Person":"Person1_Man","Part of video":"84_p1_5","Emotion":"Neutral","Valence":0,"Arousal":0,"Basic_Emotion":"Neutral","Sentiment":"Neutral"}]

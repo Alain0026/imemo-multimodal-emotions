@@ -1,0 +1,16 @@
+[
+  {
+    "Person": "Person1_Man",
+    "Age": 44,
+    "Gender": "Male",
+    "Social_relation": "Psychologist/Patient",
+    "Action": "Talking"
+  },
+  {
+    "Person": "Person2_Man",
+    "Age": 11,
+    "Gender": "Male",
+    "Social_relation": "Psychologist/Patient",
+    "Action": "Talking"
+  }
+]

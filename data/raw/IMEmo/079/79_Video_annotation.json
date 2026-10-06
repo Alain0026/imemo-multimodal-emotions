@@ -1,0 +1,14 @@
+[
+  {
+    "Person": "Person1_Man",
+    "Age": 72,
+    "Gender": "Male",
+    "Social_relation": "GrandFather/Granddaughter"
+  },
+  {
+    "Person": "Person2_Woman",
+    "Age": 10,
+    "Gender": "Female",
+    "Social_relation": "GrandFather/Granddaughter"
+  }
+]

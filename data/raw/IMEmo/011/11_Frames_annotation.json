@@ -1,0 +1,5 @@
+[{"Frame From":"frame_det_00_000001","Frame to":"frame_det_00_000945","Person":"Person1_Man","Part of video":"11_p1_1","Emotion":"Love","Valence":0.82,"Arousal":0.65,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_000946","Frame to":"frame_det_00_001119","Person":"Person2_Woman","Part of video":"11_p2_1","Emotion":"Love","Valence":0.82,"Arousal":0.65,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_001120","Frame to":"frame_det_00_001212","Person":"Person1_Man","Part of video":"11_p1_2","Emotion":"Desire","Valence":0.58,"Arousal":0.62,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_001213","Frame to":"frame_det_00_001320","Person":"Person2_Woman","Part of video":"11_p2_2","Emotion":"Joy","Valence":0.76,"Arousal":0.48,"Basic_Emotion":"Happy","Sentiment":"Positive"},
+{"Frame From":"frame_det_00_001321","Frame to":"frame_det_00_001423","Person":"Person1_Man","Part of video":"11_p1_3","Emotion":"Joy","Valence":0.76,"Arousal":0.48,"Basic_Emotion":"Happy","Sentiment":"Positive"}]
