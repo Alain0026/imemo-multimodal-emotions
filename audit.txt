@@ -1,0 +1,238 @@
+
+
+======================================================================
+BASIC EMOTIONS
+======================================================================
+Anger                255
+Disgust              78
+Fear                 162
+Happiness            40
+Happy                292
+Neutral              175
+Sadness              289
+Surprise             82
+
+
+======================================================================
+FINE EMOTIONS
+======================================================================
+Acceptance           7
+Affection            1
+Amusement            3
+Anger                182
+Anxiety              84
+Attention            2
+Compassion           1
+Concern              11
+Confidence           6
+Confusion            3
+Contempt             58
+Contentment          2
+Curiosity            5
+Defensiveness        3
+Desire               15
+Disappointment       6
+Disgust              20
+Distress             19
+Embarrassment        1
+Empathy              11
+Encouragement        3
+Explanation          3
+Fear                 54
+Frustration          9
+Happiness            5
+Happy                81
+Hurt                 3
+Interest             164
+Joy                  5
+Love                 33
+Neutral              130
+Pain                 1
+Patience             3
+Politeness           1
+Rage                 61
+Reassurance          3
+Reflection           3
+Regret               6
+Relief               10
+Sadness              243
+Sadnesss             2
+Satisfaction         3
+Seriousness          1
+Shame                17
+Shyness              3
+Surprise             45
+Thoughtfulness       2
+Understanding        2
+Warmth               1
+Wonder               36
+
+
+======================================================================
+SENTIMENTS
+======================================================================
+Negative             777
+Neutral              154
+Positive             442
+
+
+======================================================================
+OFFICIAL FINE -> BASIC MAPPING
+======================================================================
+
+Acceptance
+   Neutral            6 ( 85.7%)
+   Happiness          1 ( 14.3%)
+
+Affection
+   Happiness          1 (100.0%)
+
+Amusement
+   Happiness          3 (100.0%)
+
+Anger
+   Anger            182 (100.0%)
+
+Anxiety
+   Fear              83 ( 98.8%)
+   Surprise           1 (  1.2%)
+
+Attention
+   Neutral            2 (100.0%)
+
+Compassion
+   Happiness          1 (100.0%)
+
+Concern
+   Sadness           11 (100.0%)
+
+Confidence
+   Happiness          6 (100.0%)
+
+Confusion
+   Fear               3 (100.0%)
+
+Contempt
+   Disgust           58 (100.0%)
+
+Contentment
+   Happiness          2 (100.0%)
+
+Curiosity
+   Neutral            5 (100.0%)
+
+Defensiveness
+   Anger              3 (100.0%)
+
+Desire
+   Happy             15 (100.0%)
+
+Disappointment
+   Sadness            6 (100.0%)
+
+Disgust
+   Disgust           20 (100.0%)
+
+Distress
+   Fear              19 (100.0%)
+
+Embarrassment
+   Sadness            1 (100.0%)
+
+Empathy
+   Neutral           10 ( 90.9%)
+   Happiness          1 (  9.1%)
+
+Encouragement
+   Happiness          2 ( 66.7%)
+   Neutral            1 ( 33.3%)
+
+Explanation
+   Neutral            3 (100.0%)
+
+Fear
+   Fear              54 (100.0%)
+
+Frustration
+   Anger              9 (100.0%)
+
+Happiness
+   Happiness          5 (100.0%)
+
+Happy
+   Happy             81 (100.0%)
+
+Hurt
+   Sadness            3 (100.0%)
+
+Interest
+   Happy            157 ( 95.7%)
+   Neutral            6 (  3.7%)
+   Happiness          1 (  0.6%)
+
+Joy
+   Happy              5 (100.0%)
+
+Love
+   Happy             33 (100.0%)
+
+Neutral
+   Neutral          130 (100.0%)
+
+Pain
+   Sadness            1 (100.0%)
+
+Patience
+   Neutral            3 (100.0%)
+
+Politeness
+   Neutral            1 (100.0%)
+
+Rage
+   Anger             61 (100.0%)
+
+Reassurance
+   Happiness          3 (100.0%)
+
+Reflection
+   Neutral            3 (100.0%)
+
+Regret
+   Sadness            6 (100.0%)
+
+Relief
+   Happiness         10 (100.0%)
+
+Sadness
+   Sadness          242 ( 99.6%)
+   Happy              1 (  0.4%)
+
+Sadnesss
+   Sadness            2 (100.0%)
+
+Satisfaction
+   Happiness          3 (100.0%)
+
+Seriousness
+   Neutral            1 (100.0%)
+
+Shame
+   Sadness           17 (100.0%)
+
+Shyness
+   Fear               3 (100.0%)
+
+Surprise
+   Surprise          45 (100.0%)
+
+Thoughtfulness
+   Neutral            2 (100.0%)
+
+Understanding
+   Neutral            2 (100.0%)
+
+Warmth
+   Happiness          1 (100.0%)
+
+Wonder
+   Surprise          36 (100.0%)

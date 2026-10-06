@@ -1,0 +1,189 @@
+diff --git a/networks/dan.py b/networks/dan.py
+index ab07abc..c2604ac 100644
+--- a/networks/dan.py
++++ b/networks/dan.py
+@@ -1,3 +1,4 @@
++import os
+ from torch import nn
+ from torch.nn import functional as F
+ import torch
+@@ -6,39 +7,47 @@ from torchvision import models
+ 
+ 
+ class DAN(nn.Module):
+-    def __init__(self, num_class=7,num_head=4, pretrained=True):
++    def __init__(self, num_class=7, num_head=4, pretrained=True):
+         super(DAN, self).__init__()
+-        
+-        resnet = models.resnet18(pretrained)
+-        
++
++        resnet = models.resnet18(weights='DEFAULT' if pretrained else None)
++
+         if pretrained:
+-            checkpoint = torch.load('./models/resnet18_msceleb.pth')
+-            resnet.load_state_dict(checkpoint['state_dict'],strict=True)
++            msceleb_path = os.path.join(
++                os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
++                'models', 'resnet18_msceleb.pth'
++            )
++            if os.path.exists(msceleb_path):
++                checkpoint = torch.load(msceleb_path, map_location='cpu')
++                resnet.load_state_dict(checkpoint['state_dict'], strict=True)
++                print("Caricato: resnet18_msceleb.pth (MS-Celeb)")
++            else:
++                print("INFO: resnet18_msceleb.pth non trovato, uso pesi ImageNet")
+ 
+         self.features = nn.Sequential(*list(resnet.children())[:-2])
+         self.num_head = num_head
+         for i in range(num_head):
+-            setattr(self,"cat_head%d" %i, CrossAttentionHead())
++            setattr(self, "cat_head%d" % i, CrossAttentionHead())
+         self.sig = nn.Sigmoid()
+         self.fc = nn.Linear(512, num_class)
+         self.bn = nn.BatchNorm1d(num_class)
+ 
+-
+     def forward(self, x):
+         x = self.features(x)
+         heads = []
+         for i in range(self.num_head):
+-            heads.append(getattr(self,"cat_head%d" %i)(x))
+-        
+-        heads = torch.stack(heads).permute([1,0,2])
+-        if heads.size(1)>1:
+-            heads = F.log_softmax(heads,dim=1)
+-            
++            heads.append(getattr(self, "cat_head%d" % i)(x))
++
++        heads = torch.stack(heads).permute([1, 0, 2])
++        if heads.size(1) > 1:
++            heads = F.log_softmax(heads, dim=1)
++
+         out = self.fc(heads.sum(dim=1))
+         out = self.bn(out)
+-   
++
+         return out, x, heads
+ 
++
+ class CrossAttentionHead(nn.Module):
+     def __init__(self):
+         super().__init__()
+@@ -46,7 +55,6 @@ class CrossAttentionHead(nn.Module):
+         self.ca = ChannelAttention()
+         self.init_weights()
+ 
+-
+     def init_weights(self):
+         for m in self.modules():
+             if isinstance(m, nn.Conv2d):
+@@ -60,15 +68,14 @@ class CrossAttentionHead(nn.Module):
+                 init.normal_(m.weight, std=0.001)
+                 if m.bias is not None:
+                     init.constant_(m.bias, 0)
++
+     def forward(self, x):
+         sa = self.sa(x)
+         ca = self.ca(sa)
+-
+         return ca
+ 
+ 
+ class SpatialAttention(nn.Module):
+-
+     def __init__(self):
+         super().__init__()
+         self.conv1x1 = nn.Sequential(
+@@ -76,30 +83,28 @@ class SpatialAttention(nn.Module):
+             nn.BatchNorm2d(256),
+         )
+         self.conv_3x3 = nn.Sequential(
+-            nn.Conv2d(256, 512, kernel_size=3,padding=1),
++            nn.Conv2d(256, 512, kernel_size=3, padding=1),
+             nn.BatchNorm2d(512),
+         )
+         self.conv_1x3 = nn.Sequential(
+-            nn.Conv2d(256, 512, kernel_size=(1,3),padding=(0,1)),
++            nn.Conv2d(256, 512, kernel_size=(1, 3), padding=(0, 1)),
+             nn.BatchNorm2d(512),
+         )
+         self.conv_3x1 = nn.Sequential(
+-            nn.Conv2d(256, 512, kernel_size=(3,1),padding=(1,0)),
++            nn.Conv2d(256, 512, kernel_size=(3, 1), padding=(1, 0)),
+             nn.BatchNorm2d(512),
+         )
+         self.relu = nn.ReLU()
+ 
+-
+     def forward(self, x):
+         y = self.conv1x1(x)
+         y = self.relu(self.conv_3x3(y) + self.conv_1x3(y) + self.conv_3x1(y))
+-        y = y.sum(dim=1,keepdim=True) 
+-        out = x*y
+-        
+-        return out 
++        y = y.sum(dim=1, keepdim=True)
++        out = x * y
++        return out
+ 
+-class ChannelAttention(nn.Module):
+ 
++class ChannelAttention(nn.Module):
+     def __init__(self):
+         super().__init__()
+         self.gap = nn.AdaptiveAvgPool2d(1)
+@@ -108,15 +113,12 @@ class ChannelAttention(nn.Module):
+             nn.BatchNorm1d(32),
+             nn.ReLU(inplace=True),
+             nn.Linear(32, 512),
+-            nn.Sigmoid()    
++            nn.Sigmoid()
+         )
+ 
+-
+     def forward(self, sa):
+         sa = self.gap(sa)
+-        sa = sa.view(sa.size(0),-1)
++        sa = sa.view(sa.size(0), -1)
+         y = self.attention(sa)
+         out = sa * y
+-        
+-        return out
+-
++        return out
+\ No newline at end of file
+diff --git a/rafdb.py b/rafdb.py
+index ae0ce32..0661329 100644
+--- a/rafdb.py
++++ b/rafdb.py
+@@ -27,9 +27,9 @@ eps = sys.float_info.epsilon
+ def parse_args():
+     parser = argparse.ArgumentParser()
+     parser.add_argument('--raf_path', type=str, default='datasets/raf-basic/', help='Raf-DB dataset path.')
+-    parser.add_argument('--batch_size', type=int, default=256, help='Batch size.')
++    parser.add_argument('--batch_size', type=int, default=32, help='Batch size.')
+     parser.add_argument('--lr', type=float, default=0.1, help='Initial learning rate for sgd.')
+-    parser.add_argument('--workers', default=4, type=int, help='Number of data loading workers.')
++    parser.add_argument('--workers', default=0, type=int, help='Number of data loading workers.')
+     parser.add_argument('--epochs', type=int, default=40, help='Total training epochs.')
+     parser.add_argument('--num_head', type=int, default=4, help='Number of attention head.')
+ 
+@@ -153,7 +153,7 @@ def run_training():
+                                                batch_size = args.batch_size,
+                                                num_workers = args.workers,
+                                                shuffle = True,  
+-                                               pin_memory = True)
++                                               pin_memory = False)
+ 
+     data_transforms_val = transforms.Compose([
+         transforms.Resize((224, 224)),
+@@ -169,7 +169,7 @@ def run_training():
+                                                batch_size = args.batch_size,
+                                                num_workers = args.workers,
+                                                shuffle = False,  
+-                                               pin_memory = True)
++                                               pin_memory = False)
+ 
+     criterion_cls = torch.nn.CrossEntropyLoss()
+     criterion_af = AffinityLoss(device)

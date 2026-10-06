@@ -1,0 +1,38 @@
+# config.yaml
+
+project:
+  name: "imemo-multimodal-emotion"
+  seed: 42
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  splits: "data/splits"
+  checkpoints: "checkpoints"
+  experiments: "experiments"
+
+dataset:
+  name: "IMEmo"
+  num_emotions_sentiment: 3      # positive, negative, neutral
+  num_emotions_basic: 6          # basic emotions
+  num_emotions_fine: 16          # fine-grained emotions
+  image_size: 112
+  sequence_length: 8             # shot passati da considerare
+
+training:
+  batch_size: 32
+  num_epochs: 100
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  device: "cuda"                 # oppure "cpu"
+
+model:
+  dan:
+    pretrained: true
+    feature_dim: 128
+  speech:
+    model_name: "wav2vec2-base"
+    feature_dim: 128
+  lstm:
+    hidden_size: 128
+    num_layers: 1

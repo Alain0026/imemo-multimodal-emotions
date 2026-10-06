@@ -1,0 +1,37 @@
+# --- Credenziali (MAI su GitHub) ---
+cookies.txt
+.env
+
+# --- Ambiente e installazione ---
+venv/
+wheels/
+get-pip.py
+
+# --- Codice di terze parti (sostituito da dan_modifications.patch) ---
+DAN/
+
+# --- Dati, modelli e log ---
+data/
+checkpoints/
+models/
+experiments/
+*.pth
+*.pt
+*.npy
+*.log
+
+# --- Video e audio (copyright) ---
+*.mp4
+*.webm
+*.wav
+
+# --- File di lavoro / obsoleti ---
+archive/
+Get-History
+# audit.txt
+docs/christian_readme.md
+
+# --- Python e Jupyter ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
