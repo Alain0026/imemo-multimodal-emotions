@@ -59,7 +59,6 @@ train_basic.csv, test_basic.csv	Train/test split, Basic level (7 classes)
 train_fine.csv, test_fine.csv	Train/test split, Fine-grained level (17 classes)
 train_segments.csv, test_segments.csv	Segment-level data used by the multimodal models
 emotion_map.json	Mapping between Fine-grained emotion names and class indices
-<!-- TODO: verificare che train.csv / test.csv corrispondano al livello Sentiment e descrivere le colonne dei CSV -->
 
 The video files (.mp4) and all derived data (frames, faces, audio, features) are not included.
 
@@ -73,7 +72,12 @@ python scripts/02_extract_frames.py    # then follow the pipeline below (steps 2
 
 8 of the 100 original videos are no longer available on YouTube.
 
-<!-- TODO (facoltativo): se pubblichi anche le feature estratte (.npy) su Hugging Face o Zenodo, aggiungi qui il link: permettono di rifare il training senza scaricare i video --> <!-- TODO: aggiungere il link al paper IMEmo (CVPRW 2025) e la licenza delle annotazioni -->
+### Recovered videos (MICC)
+
+The **92 clips recovered for this work** (`.mp4`, one per clip folder) are stored on the **MICC GPU servers** (Università degli Studi di Firenze). They are kept there because YouTube videos can be removed at any time: this copy guarantees that the experiments remain reproducible even if more source videos disappear.
+
+These files are not publicly redistributed. Members of the MICC lab can ask the supervisor (Prof. Stefano Berretti) for access.
+
 Results (92 clips, same split for all models)
 
 All architectures use the LSTM temporal module.
@@ -127,7 +131,6 @@ cd ..
 
 The patch modifies networks/dan.py and rafdb.py.
 
-<!-- TODO: descrivere in una riga cosa cambia la patch -->
 
 The pre-trained ResNet-18 weights (MS-Celeb-1M) must be downloaded as described in the DAN repository and placed in models/resnet18_msceleb.pth.
 
@@ -135,7 +138,6 @@ Pipeline
 
 The pipeline starts from the annotations in data/raw/IMEmo/. Paths and parameters are set in config.yaml.
 
-<!-- TODO: verificare l'ordine e gli eventuali argomenti di ogni script -->
 Step	Script	Purpose
 1	01_download_videos.py	Download the clips (yt-dlp)
 2	02_extract_frames.py	Extract frames from the videos
@@ -152,7 +154,7 @@ Script	Experiment
 train_dan_finetuning.py	Fine-tuning of DAN
 train_multimodal_original.py	Original pipeline: DAN frozen + Wav2Vec 2.0 + LSTM
 train_multimodal_finetuned.py	Proposed model: DAN-FT + HuBERT + LSTM
-<!-- TODO: completare con train_speech_original.py, train_bert_audio.py, train_multimodal_hubert.py, train_features.py -->
+
 bash
 python scripts/01_download_videos.py
 # ...
@@ -161,7 +163,7 @@ python scripts/train_multimodal_finetuned.py
 01_download_videos.py may require a YouTube cookies.txt file. It is personal and is never committed (see .gitignore).
 
 References
-IMEmo — CVPR Workshops 2025. <!-- TODO: titolo completo, autori e link -->
+IMEmo — CVPR Workshops 2025. 
 DAN — Z. Wen et al., Distract Your Attention: Multi-head Cross Attention Network for Facial Expression Recognition, arXiv:2109.07270. Code: https://github.com/yaoing/DAN
 HuBERT — W.-N. Hsu et al., HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units, 2021.
 Wav2Vec 2.0 — A. Baevski et al., wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations, NeurIPS 2020.
